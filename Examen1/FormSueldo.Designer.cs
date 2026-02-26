@@ -1,6 +1,6 @@
 ﻿namespace Examen1
 {
-    partial class Form1
+    partial class FormSueldo
     {
         /// <summary>
         ///  Required designer variable.
@@ -57,7 +57,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(38, 45);
+            label1.Location = new Point(12, 51);
             label1.Name = "label1";
             label1.Size = new Size(157, 20);
             label1.TabIndex = 2;
@@ -66,11 +66,12 @@
             // labelISR
             // 
             labelISR.AutoSize = true;
-            labelISR.Location = new Point(218, 90);
+            labelISR.Location = new Point(236, 99);
             labelISR.Name = "labelISR";
             labelISR.Size = new Size(37, 20);
             labelISR.TabIndex = 3;
             labelISR.Text = " ISR:";
+            labelISR.Click += this.labelISR_Click;
             // 
             // label3
             // 
@@ -85,9 +86,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(0, 0);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(0, 20);
             label2.TabIndex = 5;
-            label2.Text = "label2";
+            label2.Click += this.label2_Click;
             // 
             // labelSueNet
             // 
@@ -98,7 +99,7 @@
             labelSueNet.TabIndex = 6;
             labelSueNet.Text = "Sueldo neto:";
             // 
-            // Form1
+            // FormSueldo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -110,7 +111,7 @@
             Controls.Add(label1);
             Controls.Add(buttCAp);
             Controls.Add(textBox1);
-            Name = "Form1";
+            Name = "FormSueldo";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);

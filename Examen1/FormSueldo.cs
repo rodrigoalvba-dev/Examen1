@@ -1,8 +1,8 @@
 ﻿namespace Examen1
 {
-    public partial class Form1 : Form
+    public partial class FormSueldo : Form
     {
-        public Form1()
+        public FormSueldo()
         {
             InitializeComponent();
         }
@@ -23,26 +23,26 @@
                 {
                     if (n <= 746.04)
                         ISR = n - 0.1 * .0192;
-                    else if (n > 746.04 && n <= 6332.05)
+                    else if ( n <= 6332.05)
                         ISR = 14.32 + (n - 746.04) * 0.064;
-                    else if (n > 6332.05 && n <= 11128.01)
+                    else if (n <= 11128.01)
                         ISR = 371.83 + (n - 6332.05) * 0.1088;
-                    else if (n > 11128.01 && n <= 12935.83)
+                    else if ( n <= 12935.83)
                         ISR = 893.63 + (n - 11128.01) * 0.16;
-                    else if (n > 12935.83 && n <= 15487.71)
+                    else if ( n <= 15487.71)
                         ISR = 1318.26 + (n - 12935.83) * 0.1792;
-                    else if (n > 15487.72 && n <= 31263.49)
+                    else if (n <= 31263.49)
                         ISR = 1972.12 + (n - 15487.71) * .2136;
-                    else if (n > 31263.50 && n <= 49233.00)
+                    else if ( n <= 49233.00)
                         ISR = 5850.76 + (n - 31263.49) * 0.2352;
-                    else if (n > 49233.00 && n <= 93993.9)
+                    else if ( n <= 93993.9)
                         ISR = 10837.02 + (n - 49233.00) * 0.3;
-                    else if (n > 93993.9 && n <= 125325.2)
+                    else if ( n <= 125325.2)
                         ISR = 26177.04 + (n - 93993.9) * 0.32;
-                    else if (n > 125325.2 && n <= 375975.00)
+                    else if (n <= 375975.00)
                         ISR = 38243.68 + (n - 125325.2) * 0.34;
                     else if (n > 375975.00)
-                        ISR = 113443.68 + (n - 375975.00) * 0.35;
+                        ISR = 14119.38 + (n - 375975.00) * 0.35;
 
                     sueldoneto = n - ISR;
                     labelISR.Text = "ISR: " + ISR.ToString();
