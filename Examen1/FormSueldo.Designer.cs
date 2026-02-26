@@ -71,7 +71,6 @@
             labelISR.Size = new Size(37, 20);
             labelISR.TabIndex = 3;
             labelISR.Text = " ISR:";
-            labelISR.Click += this.labelISR_Click;
             // 
             // label3
             // 
@@ -88,7 +87,6 @@
             label2.Name = "label2";
             label2.Size = new Size(0, 20);
             label2.TabIndex = 5;
-            label2.Click += this.label2_Click;
             // 
             // labelSueNet
             // 
